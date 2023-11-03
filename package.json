@@ -1,0 +1,22 @@
+{
+  "name": "capture-pages",
+  "version": "1.0.0",
+  "description": "capture website pages",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts"
+  },
+  "author": "khank",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.8.10",
+    "puppeteer": "^21.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
