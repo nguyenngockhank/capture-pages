@@ -12,9 +12,12 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^20.8.10",
-    "puppeteer": "^21.5.0"
+    "puppeteer": "^21.5.0",
+    "slug": "^8.2.3"
   },
   "devDependencies": {
+    "@types/puppeteer": "^7.0.4",
+    "@types/slug": "^5.0.6",
     "nodemon": "^3.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"

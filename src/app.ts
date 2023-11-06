@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer'
-import { devices, pageLinks } from './constants';
+import { devices, pageLinks } from './config';
 import { visitAndCapture } from './visitAndCapture';
 
 (async () => {
@@ -8,12 +8,15 @@ import { visitAndCapture } from './visitAndCapture';
 
   for (const device of devices) {
     console.log(`Testing viewport for ${device.name}`);
+
     await page.setViewport({
       width: device.width,
       height: device.height,
       deviceScaleFactor: device.deviceScaleFactor,
     });
+
     for(const link of pageLinks) {
+      console.log(`Capturing page ${link}`);
         await visitAndCapture(page,device,  link)
       }
   }

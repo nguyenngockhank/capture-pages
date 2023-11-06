@@ -1,0 +1,37 @@
+{
+    "baseUrl": "https://dev-stuttgart-mp-v2.vercel.app",
+    "pages": [
+        "/",
+        "/perks",
+        "/legal/privacy-policy",
+        "/legal/terms-conditions",
+        "/player/0",
+        "/player/1",
+        "/de",
+        "/de/perks",
+        "/de/legal/privacy-policy",
+        "/de/legal/terms-conditions",
+        "/de/player/0",
+        "/de/player/1"
+    ],
+    "devices": [
+        {
+          "name": "iPad Pro",
+          "width": 1024,
+          "height": 1366,
+          "deviceScaleFactor": 2
+        },
+        {
+          "name": "iPhone SE",
+          "width": 375,
+          "height": 667,
+          "deviceScaleFactor": 2
+        },
+        {
+          "name": "MacBook Pro",
+          "width": 1280,
+          "height": 800,
+          "deviceScaleFactor": 2
+        }
+      ]
+}

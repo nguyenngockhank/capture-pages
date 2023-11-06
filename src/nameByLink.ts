@@ -2,13 +2,14 @@ import { Device } from './types';
 
 export function nameByLink(link: string, device: Device) {
     const prefix = (() => {
-        if (link === '/') {
+        if (link === '') {
             return 'home';
         }
         const segments = link.split('/');
-        return segments[segments.length - 1];
+        return segments.join('-')
+        // return segments[segments.length - 1];
     })();
-   
+
     return appendExt(appendDeviceSize(prefix, device))
 }
 
